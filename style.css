@@ -108,3 +108,41 @@ button {
     padding: 20px;
     justify-self: start;
 }
+
+form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(7, 30px);
+    row-gap: 40px;
+    padding: 50px;
+    width: 500px;
+}
+
+#to-do-dialog,
+#description {
+    grid-column: span 2;
+}
+
+#description {
+    grid-row: span 2;
+}
+
+#form-submit,
+#new-task {
+    justify-self: center;
+    grid-column: span 2;
+}
+
+#new-task {
+    font-size: 30px;
+    position: relative;
+    bottom: 30px;
+}
+
+input {
+    border-radius: 20px;
+    border-style: solid;
+    padding: 20px;
+    font-size: 20px;
+}
+

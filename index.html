@@ -8,6 +8,30 @@
     <script src="index.js"></script>
 </head>
 <body>
+    <dialog id="todo-dialog" open>
+        <form method="dialog">
+            <p id="new-task">New Task</p>
+            <input type="text" placeholder="Task name" id="to-do-dialog" name="to-do-dialog">
+            <input type="textarea" placeholder="Description" id="description" name="descripton">
+            <label for="priority">Priority</label>
+            <input list="priority-options" id="priority" name="priority">
+            <datalist id="priority-options">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </datalist>
+            <label for="date">Select a due date</label>
+            <input type="date" id="date" name="date">
+            <label for="project-dialog">Project</label>
+            <input list="project-list" id="project-dialog" name="project-dialog">
+            <datalist id="project-list">
+                <option value="Project1">Project1</option>
+                <option value="Project2">Project2</option>
+                <option value="Project3">Project3</option>
+            </datalist>
+            <button id="form-submit" type="submit">Submit</button>
+        </form>
+      </dialog>      
     <div class="container" id="container">
         <div class="sidebar" id="sidebar">
             <div id="profile-area">
